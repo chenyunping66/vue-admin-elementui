@@ -12,13 +12,40 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
-
+// import store from './store/index'
 import './icons' // icon
 import './permission' // permission control
 import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
 
+import './plugins/ztree/js/jquery-1.4.4.min'
+import './plugins/ztree/js/jquery.ztree.core.min'
+import './plugins/ztree/js/jquery.ztree.excheck.min'
+
+import routePlugin from './routePlugin'
+
+Vue.use(routePlugin) // 修改参数方法
+
+Vue.config.productionTip = false
+
+// import apis from './api/api'
+// Vue.prototype.$api = apis
+
+// 接口域名配置全局变量
+import global_ from './Global'
+Vue.prototype.GLOBAL = global_
+// Axios.defaults.baseURL = global_.BASE_URL
+// 打包环境判断
+
+// if (process.env.NODE_ENV === 'production') {
+//   Vue.prototype.GLOBAL.BASE_URL = ' 部署服务调用正式地址'
+// } else {
+// 不用跨域
+Vue.prototype.GLOBAL.BASE_URL = ''
+// // 跨域，proxyTable代理，自定义如/api
+// Vue.prototype.GLOBAL.BASE_URL = '/api'
+// }
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -27,10 +54,16 @@ import * as filters from './filters' // global filters
  * Currently MockJs will be used in the production environment,
  * please remove it before going online! ! !
  */
-import { mockXHR } from '../mock'
-if (process.env.NODE_ENV === 'production') {
-  mockXHR()
-}
+// import { mockXHR } from '../mock'
+import Axios from 'axios'
+Vue.prototype.$http = Axios
+
+import QS from 'qs'
+Vue.prototype.$qs = QS
+
+// if (process.env.NODE_ENV === 'production') {
+//   mockXHR()
+// }
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium' // set element-ui default size

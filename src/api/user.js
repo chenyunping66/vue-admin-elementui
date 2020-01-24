@@ -1,16 +1,26 @@
 import request from '@/utils/request'
 
-export function login(data) {
+export function login(params) {
+  // const datas = {
+  //   'username': 'admin',
+  //   'password': '888888'
+  // }
   return request({
-    url: '/user/login',
-    method: 'post',
-    data
+    url: '/login',
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    },
+    // params: {
+    //   data: this.$qs.stringify(datas)
+    // }
+    params
   })
 }
 
 export function getInfo(token) {
   return request({
-    url: '/user/info',
+    url: '/info',
     method: 'get',
     params: { token }
   })
@@ -18,7 +28,7 @@ export function getInfo(token) {
 
 export function logout() {
   return request({
-    url: '/user/logout',
+    url: '/logout',
     method: 'post'
   })
 }

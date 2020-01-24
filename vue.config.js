@@ -40,14 +40,26 @@ module.exports = {
       // change xxx-api/login => mock/login
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
-        target: `http://127.0.0.1:${port}/mock`,
-        changeOrigin: true,
+      // '/api': {
+        // target: `http://127.0.0.1:${port}/mock`,
+        target: `http://120.25.219.238:8888`, // 接口域名
+        changeOrigin: true, // 是否跨域
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
+          // '^/api': '/' // 表示需要rewrite重写的,
         }
       }
-    },
-    after: require('./mock/mock-server.js')
+      // '/api': {
+      //   // target: `http://127.0.0.1:${port}/mock`,
+      //   target: `http://120.25.219.238:8888`, // 接口域名
+      //   changeOrigin: true, // 是否跨域
+      //   pathRewrite: {
+      //     // ['^' + process.env.VUE_APP_BASE_API]: ''
+      //     '^/api': '/' // 表示需要rewrite重写的,
+      //   }
+      // }
+    }
+    // after: require('./mock/mock-server.js')
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that

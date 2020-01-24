@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import getters from './getters'
 
+// import my from './modules/my'
+
 Vue.use(Vuex)
 
 // https://webpack.js.org/guides/dependency-management/#requirecontext

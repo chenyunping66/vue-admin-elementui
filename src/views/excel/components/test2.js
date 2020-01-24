@@ -1,0 +1,268 @@
+[{
+  "departmentId": 2,
+  "departmentName": "测试部门",
+  "levels": 1,
+  "parentId": 1,
+  "positions": [],
+  "children": [{
+    "departmentId": 5,
+    "departmentName": "试试会计",
+    "levels": 2,
+    "parentId": 2,
+    "positions": [],
+    "children": [{
+      "departmentId": 8,
+      "departmentName": "是十四得到",
+      "levels": 3,
+      "parentId": 5,
+      "positions": [{
+        "positionId": 16,
+        "positionName": "前端开发eee"
+      }, {
+        "positionId": 27,
+        "positionName": "培训主管"
+      }, {
+        "positionId": 31,
+        "positionName": "测试13"
+      }]
+    }, {
+      "departmentId": 43,
+      "departmentName": "浏览器",
+      "levels": 3,
+      "parentId": 5,
+      "positions": [{
+        "positionId": 17,
+        "positionName": "鹅鹅鹅"
+      }]
+    }, {
+      "departmentId": 44,
+      "departmentName": "eeee",
+      "levels": 3,
+      "parentId": 5,
+      "positions": []
+    }, {
+      "departmentId": 45,
+      "departmentName": "@@@",
+      "levels": 3,
+      "parentId": 5,
+      "positions": []
+    }]
+  }, {
+    "departmentId": 10,
+    "departmentName": "测试数ffff",
+    "levels": 2,
+    "parentId": 2,
+    "positions": [],
+    "children": [{
+      "departmentId": 42,
+      "departmentName": "传过去给儿子天天22",
+      "levels": 3,
+      "parentId": 10,
+      "positions": []
+    }]
+  }]
+}, {
+  "departmentId": 3,
+  "departmentName": "威风威风",
+  "levels": 1,
+  "parentId": 1,
+  "positions": [],
+  "children": [{
+    "departmentId": 6,
+    "departmentName": "视频组",
+    "levels": 2,
+    "parentId": 3,
+    "positions": [{
+      "positionId": 11,
+      "positionName": "文案策划"
+    }, {
+      "positionId": 15,
+      "positionName": ""
+    }, {
+      "positionId": 22,
+      "positionName": "那你拿纠结"
+    }]
+  }, {
+    "departmentId": 11,
+    "departmentName": "滴滴答答vd",
+    "levels": 2,
+    "parentId": 3,
+    "positions": []
+  }, {
+    "departmentId": 12,
+    "departmentName": "回成都火车",
+    "levels": 2,
+    "parentId": 3,
+    "positions": [{
+      "positionId": 18,
+      "positionName": "看看"
+    }],
+    "children": [{
+      "departmentId": 54,
+      "departmentName": "测试职员",
+      "levels": 3,
+      "parentId": 12,
+      "positions": []
+    }]
+  }]
+}, {
+  "departmentId": 4,
+  "departmentName": "测试部门2",
+  "levels": 1,
+  "parentId": 1,
+  "positions": [],
+  "children": [{
+    "departmentId": 39,
+    "departmentName": "四川省",
+    "levels": 2,
+    "parentId": 4,
+    "positions": [{
+      "positionId": 2,
+      "positionName": "测试开发职员"
+    }, {
+      "positionId": 29,
+      "positionName": "品牌设计"
+    }, {
+      "positionId": 32,
+      "positionName": "传参"
+    }, {
+      "positionId": 33,
+      "positionName": "cesff"
+    }]
+  }]
+}, {
+  "departmentId": 9,
+  "departmentName": "是十四4445",
+  "levels": 1,
+  "parentId": 1,
+  "positions": [],
+  "children": [{
+    "departmentId": 13,
+    "departmentName": "力量",
+    "levels": 2,
+    "parentId": 9,
+    "positions": [{
+      "positionId": 21,
+      "positionName": "那你拿"
+    }, {
+      "positionId": 24,
+      "positionName": "你你你ikk"
+    }]
+  }, {
+    "departmentId": 14,
+    "departmentName": "测试",
+    "levels": 2,
+    "parentId": 9,
+    "positions": [],
+    "children": [{
+      "departmentId": 51,
+      "departmentName": "测试组9",
+      "levels": 3,
+      "parentId": 14,
+      "positions": [{
+        "positionId": 25,
+        "positionName": "test修改成"
+      }]
+    }]
+  }, {
+    "departmentId": 15,
+    "departmentName": "测试",
+    "levels": 2,
+    "parentId": 9,
+    "positions": [],
+    "children": [{
+      "departmentId": 24,
+      "departmentName": "哈哈",
+      "levels": 3,
+      "parentId": 15,
+      "positions": []
+    }, {
+      "departmentId": 25,
+      "departmentName": "来临",
+      "levels": 3,
+      "parentId": 15,
+      "positions": []
+    }, {
+      "departmentId": 26,
+      "departmentName": "人力资源部",
+      "levels": 3,
+      "parentId": 15,
+      "positions": []
+    }, {
+      "departmentId": 27,
+      "departmentName": "会计",
+      "levels": 3,
+      "parentId": 15,
+      "positions": []
+    }, {
+      "departmentId": 29,
+      "departmentName": "研发",
+      "levels": 3,
+      "parentId": 15,
+      "positions": []
+    }, {
+      "departmentId": 31,
+      "departmentName": "UI设计",
+      "levels": 3,
+      "parentId": 15,
+      "positions": []
+    }]
+  }]
+}, {
+  "departmentId": 35,
+  "departmentName": "好多",
+  "levels": 4,
+  "parentId": 28,
+  "positions": []
+}, {
+  "departmentId": 41,
+  "departmentName": "侧式",
+  "levels": 3,
+  "parentId": 7,
+  "positions": []
+}, {
+  "departmentId": 46,
+  "departmentName": "助理",
+  "levels": 1,
+  "parentId": 1,
+  "positions": [{
+    "positionId": 19,
+    "positionName": "纠结"
+  }, {
+    "positionId": 20,
+    "positionName": "力量33"
+  }, {
+    "positionId": 26,
+    "positionName": "纠结"
+  }, {
+    "positionId": 30,
+    "positionName": "测试修改"
+  }]
+}, {
+  "departmentId": 47,
+  "departmentName": "开发",
+  "levels": 1,
+  "parentId": 1,
+  "positions": [{
+    "positionId": 28,
+    "positionName": ""
+  }]
+}, {
+  "departmentId": 48,
+  "departmentName": "计算机视觉",
+  "levels": 1,
+  "parentId": 1,
+  "positions": []
+}, {
+  "departmentId": 49,
+  "departmentName": "测试23455",
+  "levels": 1,
+  "parentId": 1,
+  "positions": []
+}, {
+  "departmentId": 50,
+  "departmentName": "部门",
+  "levels": 1,
+  "parentId": 1,
+  "positions": []
+}]
